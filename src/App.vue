@@ -119,7 +119,7 @@ export default {
 }
 
 .card {
-  display: block;
+  display: inline-block;
   width: 400px;
 }
 </style>
