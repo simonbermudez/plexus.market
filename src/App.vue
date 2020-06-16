@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container">
     <playlists @select-playlist="selectPlaylist" v-if="!selectedPlaylist" :playlists="playlists" />
-    <div v-else class="row row-cols-1 row-cols-md-2">
+    <div v-else class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
       <div class="col mb-4" v-for="video in videos" :key="video.id">
         <div class="holder" v-if="selectedVideo !== video.snippet.resourceId.videoId">
           <img
