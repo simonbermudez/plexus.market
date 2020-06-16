@@ -77,7 +77,7 @@ export default {
       this.selectedVideo = "";
     },
     buy(id) {
-      alert(id);
+      window.location.href = `https://form.jotform.com/82301321716243?productLink=https://youtu.be/${id}`;
     }
   },
   created() {
