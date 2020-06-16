@@ -1,14 +1,6 @@
 <template>
   <div id="app">
-    <div class="playlists" v-if="!selectedPlaylist">
-      <div v-for="playlist in playlists" :key="playlist.id">
-        {{ playlist.snippet.title }}
-        <img
-          :src="playlist.snippet.thumbnails.standard.url"
-          @click="selectPlaylist(playlist.id)"
-        />
-      </div>
-    </div>
+    <playlists @select-playlist="selectPlaylist" v-if="!selectedPlaylist" :playlists="playlists" />
     <div v-else>
       <div class="card" v-for="video in videos" :key="video.id">
         <div class="card" v-if="selectedVideo !== video.snippet.resourceId.videoId">
@@ -43,9 +35,12 @@
 
 <script>
 import axios from "axios";
+import Playlists from "./components/Playlists.vue";
 export default {
   name: "App",
-  components: {},
+  components: {
+    playlists: Playlists
+  },
   data() {
     return {
       selectedVideo: "",
@@ -54,28 +49,21 @@ export default {
       selectedPlaylist: "",
       api: {
         endpoint: "https://www.googleapis.com/youtube/v3",
-        key: "AIzaSyC-C3ut8Wm3KeYYuxs_RawKtT6oHhl0tLg"
+        key: "AIzaSyC-C3ut8Wm3KeYYuxs_RawKtT6oHhl0tLg",
+        channelId: "UCp0Kd665CtievA0ss105ujA"
       }
     };
   },
   methods: {
     getPlaylists() {
       axios
-        .get(
-          `https://www.googleapis.com/youtube/v3/playlists?part=snippet&channelId=UCp0Kd665CtievA0ss105ujA&maxResults=50&key=${this.api.key}`
-        )
+        .get("https://plexus-flask-api.herokuapp.com/api.json")
         .then(response => {
           this.playlists = response.data.items;
         });
     },
     getPlaylistVideos(playlistId) {
-      axios
-        .get(
-          `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=50&key=${this.api.key}`
-        )
-        .then(response => {
-          this.videos = response.data.items;
-        });
+      this.videos = this.playlists.find(x => x.id === playlistId).videos;
     },
     selectPlaylist(id) {
       console.log(id);
