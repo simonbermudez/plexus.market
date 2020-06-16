@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
     <playlists @select-playlist="selectPlaylist" v-if="!selectedPlaylist" :playlists="playlists" />
-    <div v-else>
-      <div class="card" v-for="video in videos" :key="video.id">
-        <div class="card" v-if="selectedVideo !== video.snippet.resourceId.videoId">
+    <div v-else class="row row-cols-1 row-cols-md-2">
+      <div class="col mb-4" v-for="video in videos" :key="video.id">
+        <div class="holder" v-if="selectedVideo !== video.snippet.resourceId.videoId">
           <img
             :id="video.snippet.resourceId.videoId"
             :src="video.snippet.thumbnails.medium.url"
@@ -11,7 +11,7 @@
           />
         </div>
 
-        <div v-else class="card">
+        <div v-else class>
           <div class="holder">
             <iframe
               :id="video.snippet.resourceId.videoId"
@@ -104,10 +104,5 @@ export default {
   width: 100%;
   height: 100%;
   background-color: rgba(100, 100, 100, 0);
-}
-
-.card {
-  display: inline-block;
-  width: 400px;
 }
 </style>
