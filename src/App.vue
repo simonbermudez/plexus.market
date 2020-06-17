@@ -17,7 +17,7 @@
               :id="video.snippet.resourceId.videoId"
               width="320"
               height="180"
-              :src="`https://www.youtube.com/embed/${selectedVideo}?autoplay=1&mute=1`"
+              :src="`https://www.youtube.com/embed/${selectedVideo}?autoplay=1&mute=1&controls=0&showinfo=0&autohide=1`"
               frameborder="0"
               class="frame"
             ></iframe>
