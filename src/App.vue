@@ -1,9 +1,16 @@
 <template>
   <div id="app" class="container">
-    <playlists @select-playlist="selectPlaylist" v-if="!selectedPlaylist" :playlists="playlists" />
+    <playlists
+      @select-playlist="selectPlaylist"
+      v-if="!selectedPlaylist"
+      :playlists="playlists"
+    />
     <div v-else class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
       <div class="col mb-4" v-for="video in videos" :key="video.id">
-        <div class="holder" v-if="selectedVideo !== video.snippet.resourceId.videoId">
+        <div
+          class="holder"
+          v-if="selectedVideo !== video.snippet.resourceId.videoId"
+        >
           <img
             :id="video.snippet.resourceId.videoId"
             :src="video.snippet.thumbnails.medium.url"
@@ -34,56 +41,56 @@
 </template>
 
 <script>
-import axios from "axios";
-import Playlists from "./components/Playlists.vue";
+import axios from 'axios'
+import Playlists from './components/Playlists.vue'
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    playlists: Playlists
+    playlists: Playlists,
   },
   data() {
     return {
-      selectedVideo: "",
+      selectedVideo: '',
       playlists: [],
       videos: [],
-      selectedPlaylist: "",
+      selectedPlaylist: '',
       api: {
-        endpoint: "https://www.googleapis.com/youtube/v3",
-        key: "AIzaSyC-C3ut8Wm3KeYYuxs_RawKtT6oHhl0tLg",
-        channelId: "UCp0Kd665CtievA0ss105ujA"
-      }
-    };
+        endpoint: 'https://www.googleapis.com/youtube/v3',
+        key: 'AIzaSyC-C3ut8Wm3KeYYuxs_RawKtT6oHhl0tLg',
+        channelId: 'UCp0Kd665CtievA0ss105ujA',
+      },
+    }
   },
   methods: {
     getPlaylists() {
       axios
-        .get("https://plexus-flask-api.herokuapp.com/api.json")
-        .then(response => {
-          this.playlists = response.data.items;
-        });
+        .get('https://plexus-flask-api.herokuapp.com/api.json')
+        .then((response) => {
+          this.playlists = response.data.items
+        })
     },
     getPlaylistVideos(playlistId) {
-      this.videos = this.playlists.find(x => x.id === playlistId).videos;
+      this.videos = this.playlists.find((x) => x.id === playlistId).videos
     },
     selectPlaylist(id) {
-      console.log(id);
-      this.selectedPlaylist = id;
-      this.getPlaylistVideos(id);
+      console.log(id)
+      this.selectedPlaylist = id
+      this.getPlaylistVideos(id)
     },
     videoHover(id) {
-      this.selectedVideo = id;
+      this.selectedVideo = id
     },
     videoHoverLeave() {
-      this.selectedVideo = "";
+      this.selectedVideo = ''
     },
     buy(id) {
-      window.location.href = `https://form.jotform.com/82301321716243?productLink=https://youtu.be/${id}`;
-    }
+      window.location.href = `https://form.jotform.com/82301321716243?productLink=https://youtu.be/${id}`
+    },
   },
   created() {
-    this.getPlaylists();
-  }
-};
+    this.getPlaylists()
+  },
+}
 </script>
 
 <style>

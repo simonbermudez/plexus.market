@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: "Playlists",
-  props: ["playlists"]
-};
+  name: 'Playlists',
+  props: ['playlists'],
+}
 </script>
