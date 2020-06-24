@@ -62,7 +62,7 @@
                 id="main-menu"
                 aria-label="Main menu"
                 aria-haspopup="true"
-                @click="show = !show"
+                @click="isOpen = !isOpen"
               >
                 <svg
                   class="h-6 w-6"
@@ -81,16 +81,18 @@
             </div>
           </div>
           <div class="hidden md:block md:ml-10">
-            <a
-              href="#"
+            <router-link
+              to="/"
               class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
-              >Product
-            </a>
-            <a
-              href="#"
+            >
+              Home
+            </router-link>
+            <router-link
+              to="/products"
               class="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
-              >Features
-            </a>
+            >
+              Products
+            </router-link>
             <a
               href="#"
               class="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
@@ -118,15 +120,15 @@
       </nav>
 
       <transition
-        enter-class="duration-150 ease-out"
-        enter-active-class="opacity-0 scale-95"
+        enter-active-class="transition ease-out duration-100 transform"
+        enter-class="opacity-0 scale-95"
         enter-to-class="opacity-100 scale-100"
-        leave-class="duration-100 ease-in"
-        leave-active-class="opacity-100 scale-100"
+        leave-active-class="transition ease-in duration-75 transform"
+        leave-class="opacity-100 scale-100"
         leave-to-class="opacity-0 scale-95"
       >
         <div
-          v-show="show"
+          v-if="isOpen"
           class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
         >
           <div class="rounded-lg shadow-md">
@@ -149,6 +151,7 @@
                     type="button"
                     class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
                     aria-label="Close menu"
+                    @click="isOpen = false"
                   >
                     <svg
                       class="h-6 w-6"
@@ -340,10 +343,8 @@
 <script>
 export default {
   name: 'Home',
-  data: () => {
-    return {
-      show: false,
-    }
-  },
+  data: () => ({
+    isOpen: false,
+  }),
 }
 </script>
