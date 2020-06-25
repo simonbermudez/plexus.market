@@ -1,33 +1,39 @@
 <template>
-  <div class="container">
+  <div class="container min-h-screen">
     <playlists
       @select-playlist="selectPlaylist"
       v-if="!selectedPlaylist"
       :playlists="playlists"
     />
 
-    <div v-else class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-      <div class="col mb-4" v-for="video in videos" :key="video.id">
+    <div
+      v-else
+      class="grid grid-cols-1 gap-10 my-8 md:grid-cols-2 lg:grid-cols-3"
+    >
+      <div
+        class="overflow-hidden rounded shadow"
+        v-for="video in videos"
+        :key="video.id"
+      >
         <div
-          class="holder"
+          class="w-full"
           v-if="selectedVideo !== video.snippet.resourceId.videoId"
         >
           <img
             :id="video.snippet.resourceId.videoId"
-            :src="video.snippet.thumbnails.medium.url"
+            :src="video.snippet.thumbnails.maxres.url"
             @mouseover="videoHover(video.snippet.resourceId.videoId)"
+            class="w-full"
           />
         </div>
 
         <div v-else class>
-          <div class="holder">
+          <div class="embed-responsive aspect-ratio-16/9">
             <iframe
               :id="video.snippet.resourceId.videoId"
-              width="320"
-              height="180"
               :src="`https://www.youtube.com/embed/${selectedVideo}?autoplay=1&mute=1&controls=0&showinfo=0&autohide=1`"
               frameborder="0"
-              class="frame"
+              class="embed-responsive-item"
             ></iframe>
             <div
               class="bar"
