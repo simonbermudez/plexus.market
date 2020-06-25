@@ -21,7 +21,7 @@
         >
           <img
             :id="video.snippet.resourceId.videoId"
-            :src="video.snippet.thumbnails.maxres.url"
+            v-lazy="video.snippet.thumbnails.maxres.url"
             @mouseover="videoHover(video.snippet.resourceId.videoId)"
             class="w-full"
           />

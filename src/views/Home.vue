@@ -279,6 +279,7 @@
                 class="relative w-full mx-auto rounded-lg shadow-lg lg:max-w-md"
               >
                 <button
+                  @click="isOpenModal = true"
                   type="button"
                   class="relative block w-full overflow-hidden rounded-lg focus:outline-none focus:shadow-outline"
                 >
@@ -350,6 +351,52 @@
         </router-link>
       </div>
     </div>
+
+    <transition
+      enter-active-class="duration-300 ease-out"
+      enter-class="opacity-0"
+      enter-to-class="opacity-100"
+      leave-active-class="duration-200 ease-in"
+      leave-class="opacity-100"
+      leave-to-class="opacity-0"
+    >
+      <div
+        @click="isOpenModal = false"
+        v-show="isOpenModal"
+        class="fixed inset-0 transition-opacity"
+      >
+        <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+      </div>
+    </transition>
+
+    <transition
+      enter-active-class="duration-300 ease-out"
+      enter-class="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
+      enter-to-class="translate-y-0 opacity-100 sm:scale-100"
+      leave-active-class="duration-200 ease-in"
+      leave-class="translate-y-0 opacity-100 sm:scale-100"
+      leave-to-class="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
+    >
+      <div
+        v-if="isOpenModal"
+        class="absolute overflow-hidden transition-all transform -translate-x-1/2 -translate-y-1/2 rounded-lg shadow-xl left-1/2 sm:max-w-6xl sm:w-full top-1/2"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-headline"
+      >
+        <div class="embed-responsive aspect-ratio-16/9">
+          <iframe
+            class="embed-responsive-item"
+            id="ytplayer"
+            type="text/html"
+            width="640"
+            height="360"
+            src="http://www.youtube.com/embed/S-B8-93Y_ZM?autoplay=1&enablejsapi=1&modestbranding=1&rel=0&showinfo=0"
+            frameborder="0"
+          />
+        </div>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -358,6 +405,7 @@ export default {
   name: 'Home',
   data: () => ({
     isOpen: false,
+    isOpenModal: false,
   }),
 }
 </script>
