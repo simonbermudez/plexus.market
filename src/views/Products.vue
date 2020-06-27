@@ -27,63 +27,27 @@
       </div>
 
       <playlists
-        @select-playlist="selectPlaylist"
         v-if="!selectedPlaylist"
         :playlists="playlists"
+        :selectedVideo="selectedVideo"
+        :videoHover="videoHover"
+        :videoHoverLeave="videoHoverLeave"
+        :jotFormUrl="jotFormUrl"
       />
 
       <div
         v-else
-        class="grid grid-cols-1 gap-10 my-8 md:grid-cols-2 lg:grid-cols-3"
+        class="grid items-center grid-cols-1 gap-10 my-8 md:grid-cols-2 lg:grid-cols-3"
       >
-        <div
-          class="overflow-hidden rounded shadow"
+        <p-video-card
           v-for="video in videos"
           :key="video.id"
-        >
-          <div
-            class="w-full"
-            v-if="selectedVideo !== video.snippet.resourceId.videoId"
-          >
-            <img
-              :id="video.snippet.resourceId.videoId"
-              v-lazy="video.snippet.thumbnails.maxres.url"
-              :key="video.snippet.thumbnails.maxres.url"
-              @mouseover="videoHover(video.snippet.resourceId.videoId)"
-              class="w-full"
-            />
-
-            <router-link
-              exact
-              :to="{
-                name: 'product-detail',
-                params: { id: video.snippet.resourceId.videoId },
-              }"
-            >
-              Video aquí
-            </router-link>
-          </div>
-
-          <div v-else class="group embed-responsive aspect-ratio-16/9">
-            <iframe
-              :id="video.snippet.resourceId.videoId"
-              :src="`https://www.youtube.com/embed/${selectedVideo}?autoplay=1&mute=1&controls=0&showinfo=0&autohide=1`"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-              width="800"
-              height="443"
-              type="text/html"
-              class="embed-responsive-item"
-            ></iframe>
-            <div
-              class="absolute inset-0"
-              @mouseleave="videoHoverLeave()"
-              @click="buy(video.snippet.resourceId.videoId)"
-            ></div>
-          </div>
-        </div>
+          :video="video"
+          :selectedVideo="selectedVideo"
+          :videoHover="videoHover"
+          :videoHoverLeave="videoHoverLeave"
+          :jotFormUrl="jotFormUrl"
+        />
       </div>
     </div>
   </div>
@@ -96,18 +60,21 @@ import axios from 'axios'
 // Components
 import pHeader from '@/components/pHeader'
 import Playlists from '../components/Playlists.vue'
+import pVideoCard from '@/components/pVideoCard'
 
 export default {
   name: 'Home',
   components: {
     playlists: Playlists,
     pHeader,
+    pVideoCard,
   },
   data: () => ({
     selectedVideo: '',
     playlists: [],
     videos: [],
     selectedPlaylist: '',
+    jotFormUrl: process.env.VUE_APP_JOTFORM,
     api: {
       endpoint: process.env.VUE_APP_ENDPOINT,
       key: process.env.VUE_APP_KEY,
@@ -139,9 +106,9 @@ export default {
     videoHoverLeave() {
       this.selectedVideo = ''
     },
-    buy(id) {
-      window.location.href = `https://form.jotform.com/82301321716243?productLink=https://youtu.be/${id}`
-    },
+    // buy(id) {
+    //   window.location.href = `https://form.jotform.com/82301321716243?productLink=https://youtu.be/${id}`
+    // },
   },
   created() {
     this.getPlaylists()

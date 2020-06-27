@@ -26,7 +26,7 @@
                 <div class="embed-responsive aspect-ratio-16/9">
                   <iframe
                     :id="id"
-                    :src="`https://www.youtube.com/embed/${id}?autoplay=0&mute=1&controls=0&showinfo=0&autohide=1&modestbranding=1&rel=0`"
+                    :src="`https://www.youtube.com/embed/${id}?autoplay=0&showinfo=0&autohide=1&modestbranding=1&rel=0`"
                     frameborder="0"
                     scrolling="no"
                     marginheight="0"
