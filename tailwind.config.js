@@ -1,5 +1,10 @@
 module.exports = {
-  purge: ['./src/views/**/*.vue', './src/components/**/*.vue'],
+  purge: [
+    './public/**/*.html',
+    './src/App.vue',
+    './src/views/**/*.vue',
+    './src/components/**/*.vue',
+  ],
   theme: {
     extend: {
       aspectRatio: {
