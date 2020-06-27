@@ -2,6 +2,7 @@
 import Vue from 'vue'
 import VueLazyload from 'vue-lazyload'
 import { Plugin } from 'vue-fragment'
+import VueAnalytics from 'vue-analytics'
 
 // App
 import App from './App.vue'
@@ -16,6 +17,9 @@ import './assets/tailwind.css'
 Vue.config.productionTip = false
 Vue.use(VueLazyload)
 Vue.use(Plugin)
+Vue.use(VueAnalytics, {
+  id: process.env.VUE_APP_ANALYTICS,
+})
 
 // Initialize
 new Vue({
