@@ -1,4 +1,4 @@
 module.exports = {
   publicPath:
-    process.env.NODE_ENV === "production" ? "/plexus.market/dist/" : "/",
-};
+    process.env.NODE_ENV === 'production' ? '/plexus.market/dist/' : '/',
+}
