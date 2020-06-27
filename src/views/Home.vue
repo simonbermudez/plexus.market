@@ -391,7 +391,7 @@
             type="text/html"
             width="640"
             height="360"
-            src="http://www.youtube.com/embed/S-B8-93Y_ZM?autoplay=1&enablejsapi=1&modestbranding=1&rel=0&showinfo=0"
+            src="https://www.youtube.com/embed/S-B8-93Y_ZM?autoplay=1&enablejsapi=1&modestbranding=1&rel=0&showinfo=0"
             frameborder="0"
           />
         </div>
