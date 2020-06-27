@@ -1,60 +1,69 @@
 <template>
-  <div class="container min-h-screen">
-    <playlists
-      @select-playlist="selectPlaylist"
-      v-if="!selectedPlaylist"
-      :playlists="playlists"
-    />
+  <fragment>
+    <p-header />
 
-    <div
-      v-else
-      class="grid grid-cols-1 gap-10 my-8 md:grid-cols-2 lg:grid-cols-3"
-    >
+    <div class="container min-h-screen px-5">
+      <playlists
+        @select-playlist="selectPlaylist"
+        v-if="!selectedPlaylist"
+        :playlists="playlists"
+      />
+
       <div
-        class="overflow-hidden rounded shadow"
-        v-for="video in videos"
-        :key="video.id"
+        v-else
+        class="grid grid-cols-1 gap-10 my-8 md:grid-cols-2 lg:grid-cols-3"
       >
         <div
-          class="w-full"
-          v-if="selectedVideo !== video.snippet.resourceId.videoId"
+          class="overflow-hidden rounded shadow"
+          v-for="video in videos"
+          :key="video.id"
         >
-          <img
-            :id="video.snippet.resourceId.videoId"
-            v-lazy="video.snippet.thumbnails.maxres.url"
-            @mouseover="videoHover(video.snippet.resourceId.videoId)"
+          <div
             class="w-full"
-          />
-        </div>
-
-        <div v-else class>
-          <div class="embed-responsive aspect-ratio-16/9">
-            <iframe
+            v-if="selectedVideo !== video.snippet.resourceId.videoId"
+          >
+            <img
               :id="video.snippet.resourceId.videoId"
-              :src="`https://www.youtube.com/embed/${selectedVideo}?autoplay=1&mute=1&controls=0&showinfo=0&autohide=1`"
-              frameborder="0"
-              class="embed-responsive-item"
-            ></iframe>
-            <div
-              class="bar"
-              @mouseleave="videoHoverLeave()"
-              @click="buy(video.snippet.resourceId.videoId)"
-            ></div>
+              v-lazy="video.snippet.thumbnails.maxres.url"
+              @mouseover="videoHover(video.snippet.resourceId.videoId)"
+              class="w-full"
+            />
+          </div>
+
+          <div v-else class>
+            <div class="embed-responsive aspect-ratio-16/9">
+              <iframe
+                :id="video.snippet.resourceId.videoId"
+                :src="`https://www.youtube.com/embed/${selectedVideo}?autoplay=1&mute=1&controls=0&showinfo=0&autohide=1`"
+                frameborder="0"
+                class="embed-responsive-item"
+              ></iframe>
+              <div
+                class="bar"
+                @mouseleave="videoHoverLeave()"
+                @click="buy(video.snippet.resourceId.videoId)"
+              ></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </fragment>
 </template>
 
 <script>
+// Dependencies
 import axios from 'axios'
+
+// Components
+import pHeader from '@/components/pHeader'
 import Playlists from '../components/Playlists.vue'
 
 export default {
   name: 'Home',
   components: {
     playlists: Playlists,
+    pHeader,
   },
   data() {
     return {
