@@ -106,9 +106,6 @@ export default {
     videoHoverLeave() {
       this.selectedVideo = ''
     },
-    // buy(id) {
-    //   window.location.href = `https://form.jotform.com/82301321716243?productLink=https://youtu.be/${id}`
-    // },
   },
   created() {
     this.getPlaylists()

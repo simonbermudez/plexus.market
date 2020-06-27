@@ -97,6 +97,7 @@
                   id="first_name"
                   name="firstName"
                   class="block w-full px-4 py-3 transition duration-150 ease-in-out form-input"
+                  rules="required|min:3|max:20"
                 />
               </div>
             </div>

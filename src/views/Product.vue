@@ -88,6 +88,24 @@
         </section>
       </div>
     </transition>
+
+    <section class="container flex flex-col justify-center px-5 pb-16">
+      <h2 class="text-3xl font-medium text-center">You may like</h2>
+
+      <div
+        class="grid items-center grid-cols-1 gap-10 my-8 md:grid-cols-2 lg:grid-cols-3"
+      >
+        <p-video-card
+          v-for="video in videos.slice(1, 4)"
+          :key="video.id"
+          :video="video"
+          :selectedVideo="selectedVideo"
+          :videoHover="videoHover"
+          :videoHoverLeave="videoHoverLeave"
+          :jotFormUrl="jotFormUrl"
+        />
+      </div>
+    </section>
   </div>
 </template>
 
@@ -95,6 +113,7 @@
 // Dependencies
 import VueMarkdown from 'vue-markdown'
 import { BarLoader } from '@saeris/vue-spinners'
+import pVideoCard from '@/components/pVideoCard'
 
 // Components
 import pHeader from '@/components/pHeader'
@@ -108,12 +127,14 @@ export default {
     pHeader,
     VueMarkdown,
     BarLoader,
+    pVideoCard,
   },
   data: () => ({
     id: '',
     isLoading: true,
     video: {},
     videos: [],
+    selectedVideo: '',
     jotFormUrl: process.env.VUE_APP_JOTFORM,
     anchorAttrs: {
       target: '_blank',
@@ -144,6 +165,16 @@ export default {
 
       this.video = this.videos.find(v => v.snippet.resourceId.videoId === id)
       this.isLoading = false
+
+      this.videos.sort((a, b) => {
+        return new Date(b.snippet.publishedAt) - new Date(a.snippet.publishedAt)
+      })
+    },
+    videoHover(id) {
+      this.selectedVideo = id
+    },
+    videoHoverLeave() {
+      this.selectedVideo = ''
     },
   },
 }
