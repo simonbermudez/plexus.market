@@ -90,7 +90,6 @@ export default {
       this.videos = this.playlists.find((x) => x.id === playlistId).videos
     },
     selectPlaylist(id) {
-      console.log(id)
       this.selectedPlaylist = id
       this.getPlaylistVideos(id)
     },
