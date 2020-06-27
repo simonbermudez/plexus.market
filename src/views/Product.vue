@@ -93,12 +93,14 @@
 
 <script>
 // Dependencies
-import axios from 'axios'
 import VueMarkdown from 'vue-markdown'
 import { BarLoader } from '@saeris/vue-spinners'
 
 // Components
 import pHeader from '@/components/pHeader'
+
+// Libraries
+import axios from '@/lib/axios'
 
 export default {
   name: 'Product',

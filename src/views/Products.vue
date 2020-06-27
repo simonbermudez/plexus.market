@@ -54,13 +54,13 @@
 </template>
 
 <script>
-// Dependencies
-import axios from 'axios'
-
 // Components
 import pHeader from '@/components/pHeader'
 import Playlists from '../components/Playlists.vue'
 import pVideoCard from '@/components/pVideoCard'
+
+// Libraries
+import axios from '@/lib/axios'
 
 export default {
   name: 'Home',
