@@ -3,12 +3,36 @@
     <p-header />
 
     <div class="container min-h-screen px-5">
+      <div class="pb-8 mt-6 border-b">
+        <div class="flex flex-col items-end">
+          <label
+            for="select-playlist"
+            class="block text-sm font-medium leading-5 text-gray-700"
+            >Filter by Category
+          </label>
+          <select
+            id="select-playlist"
+            class="block py-2 pl-3 pr-10 mt-1 text-base leading-6 border-gray-300 form-select focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"
+            @change="selectPlaylist"
+          >
+            <option value="All" selected>All</option>
+            <option
+              v-for="playlist in playlists"
+              :key="playlist.id"
+              :value="playlist.id"
+              v-text="playlist.snippet.title"
+            ></option>
+          </select>
+        </div>
+      </div>
+
       <playlists
         @select-playlist="selectPlaylist"
         v-if="!selectedPlaylist"
         :playlists="playlists"
+        :selectPlaylist="selectPlaylist"
       />
-      <!-- 
+
       <div
         v-else
         class="grid grid-cols-1 gap-10 my-8 md:grid-cols-2 lg:grid-cols-3"
@@ -51,7 +75,7 @@
             ></div>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
   </fragment>
 </template>
@@ -90,9 +114,15 @@ export default {
     getPlaylistVideos(playlistId) {
       this.videos = this.playlists.find((x) => x.id === playlistId).videos
     },
-    selectPlaylist(id) {
-      this.selectedPlaylist = id
-      this.getPlaylistVideos(id)
+    selectPlaylist(e) {
+      const id = e.target.value
+
+      if (id == 'All') {
+        this.selectedPlaylist = ''
+      } else {
+        this.selectedPlaylist = id
+        this.getPlaylistVideos(id)
+      }
     },
     videoHover(id) {
       this.selectedVideo = id
