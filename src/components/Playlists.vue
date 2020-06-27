@@ -5,60 +5,62 @@
       class="grid grid-cols-1 gap-10 my-8 md:grid-cols-2 lg:grid-cols-3"
     >
       <template v-for="playlist in playlists">
-        <!-- 
-          @click="$emit('select-playlist', playlist.id)"
-          <div
-          :key="playlist.id"
-          class="relative overflow-hidden text-white transition-all duration-200 rounded shadow-md cursor-pointer hover:shadow-xl"
-        >
-          <img
-            class="card-img"
-            :src="playlist.snippet.thumbnails.maxres.url"
-            :alt="playlist.snippet.title"
-          />
-          <div
-            class="absolute bottom-0 left-0 w-full py-4 text-center bg-black bg-opacity-75"
-          >
-            <h5 class="font-bold">{{ playlist.snippet.title }}</h5>
-            <p class="card-text">{{ playlist.snippet.description }}</p>
-          </div>
-        </div> -->
-
         <div
-          class="overflow-hidden rounded shadow"
+          class="overflow-hidden rounded shadow group"
           v-for="video in playlist.videos"
           :key="video.id"
         >
-          <div
-            class="w-full"
-            v-if="selectedVideo !== video.snippet.resourceId.videoId"
+          <transition
+            enter-class="hidden ease-in"
+            enter-active-class="block transition-all duration-500 ease-in-out"
+            leave-active-class="block transition-all duration-500 ease-in-out"
+            leave-to-class="hidden ease-out"
           >
-            <img
-              :id="video.snippet.resourceId.videoId"
-              v-lazy="video.snippet.thumbnails.maxres.url"
-              @mouseover="videoHover(video.snippet.resourceId.videoId)"
-              class="w-full"
-            />
-          </div>
-
-          <div v-else class="group embed-responsive aspect-ratio-16/9">
-            <iframe
-              :id="video.snippet.resourceId.videoId"
-              :src="`https://www.youtube.com/embed/${selectedVideo}?autoplay=1&mute=1&controls=0&showinfo=0&autohide=1`"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-              width="800"
-              height="443"
-              type="text/html"
-              class="embed-responsive-item"
-            ></iframe>
             <div
-              class="absolute inset-0"
-              @mouseleave="videoHoverLeave()"
-              @click="buy(video.snippet.resourceId.videoId)"
-            ></div>
+              class="w-full"
+              v-if="selectedVideo !== video.snippet.resourceId.videoId"
+            >
+              <img
+                :id="video.snippet.resourceId.videoId"
+                v-lazy="video.snippet.thumbnails.maxres.url"
+                @mouseover="videoHover(video.snippet.resourceId.videoId)"
+                class="w-full"
+              />
+            </div>
+          </transition>
+
+          <transition
+            enter-class="hidden ease-in"
+            enter-active-class="block transition-all duration-500 ease-in-out"
+            leave-active-class="block transition-all duration-500 ease-in-out"
+            leave-to-class="hidden ease-out"
+          >
+            <div
+              v-if="selectedVideo === video.snippet.resourceId.videoId"
+              class="group embed-responsive aspect-ratio-16/9"
+            >
+              <iframe
+                :id="video.snippet.resourceId.videoId"
+                :src="`https://www.youtube.com/embed/${selectedVideo}?autoplay=1&mute=1&controls=0&showinfo=0&autohide=1`"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                width="800"
+                height="443"
+                type="text/html"
+                class="embed-responsive-item"
+              ></iframe>
+              <div
+                class="absolute inset-0"
+                @mouseleave="videoHoverLeave()"
+                @click="buy(video.snippet.resourceId.videoId)"
+              ></div>
+            </div>
+          </transition>
+
+          <div class="transition-all duration-200 max-h-0 group-hover:max-h-64">
+            Hola
           </div>
         </div>
       </template>

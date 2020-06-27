@@ -3,6 +3,7 @@ import Vue from 'vue'
 import VueLazyload from 'vue-lazyload'
 import { Plugin } from 'vue-fragment'
 import VueAnalytics from 'vue-analytics'
+import { VueSpinners } from '@saeris/vue-spinners'
 
 // App
 import App from './App.vue'
@@ -20,9 +21,10 @@ Vue.use(Plugin)
 Vue.use(VueAnalytics, {
   id: process.env.VUE_APP_ANALYTICS,
 })
+Vue.use(VueSpinners)
 
 // Initialize
 new Vue({
   router,
-  render: (h) => h(App),
+  render: h => h(App),
 }).$mount('#app')

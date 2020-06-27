@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <fragment>
     <transition
       enter-class="ease-in opacity-0"
       enter-active-class="transition-opacity duration-500 ease-in-out"
@@ -16,7 +16,7 @@
         </p>
       </div>
     </footer>
-  </div>
+  </fragment>
 </template>
 
 <script>

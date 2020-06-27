@@ -1,5 +1,5 @@
 <template>
-  <fragment>
+  <div>
     <p-header />
 
     <div class="container min-h-screen px-5">
@@ -30,7 +30,6 @@
         @select-playlist="selectPlaylist"
         v-if="!selectedPlaylist"
         :playlists="playlists"
-        :selectPlaylist="selectPlaylist"
       />
 
       <div
@@ -53,6 +52,16 @@
               @mouseover="videoHover(video.snippet.resourceId.videoId)"
               class="w-full"
             />
+
+            <router-link
+              exact
+              :to="{
+                name: 'product-detail',
+                params: { id: video.snippet.resourceId.videoId },
+              }"
+            >
+              Video aquí
+            </router-link>
           </div>
 
           <div v-else class="group embed-responsive aspect-ratio-16/9">
@@ -77,7 +86,7 @@
         </div>
       </div>
     </div>
-  </fragment>
+  </div>
 </template>
 
 <script>
@@ -112,7 +121,7 @@ export default {
       })
     },
     getPlaylistVideos(playlistId) {
-      this.videos = this.playlists.find((x) => x.id === playlistId).videos
+      this.videos = this.playlists.find(x => x.id === playlistId).videos
     },
     selectPlaylist(e) {
       const id = e.target.value
