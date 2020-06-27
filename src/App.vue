@@ -9,7 +9,7 @@
       <router-view />
     </transition>
 
-    <footer class="w-full py-3 text-white bg-black">
+    <footer class="w-full py-3 -mt-12 text-white bg-black">
       <div class="container px-5">
         <p class="text-center">
           Plexus Market © 2020

@@ -100,7 +100,7 @@
             <span class="inline-flex rounded-md shadow-md">
               <span class="inline-flex rounded-md shadow-xs">
                 <router-link
-                  to="/contact-us"
+                  to="/contact"
                   class="inline-flex items-center px-4 py-2 text-base font-medium leading-6 text-blue-600 transition duration-150 ease-in-out bg-white border border-transparent rounded-md hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-indigo"
                 >
                   Contact Us
@@ -178,7 +178,7 @@
                 </div>
                 <div>
                   <router-link
-                    to="/contact-us"
+                    to="/contact"
                     class="block w-full px-5 py-3 font-medium text-center text-blue-600 transition duration-150 ease-in-out bg-gray-50 hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:bg-gray-100 focus:text-blue-700"
                     role="menuitem"
                   >

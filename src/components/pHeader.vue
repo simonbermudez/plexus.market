@@ -3,7 +3,7 @@
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="flex justify-between h-16">
         <div class="flex">
-          <div class="flex items-center flex-shrink-0">
+          <router-link to="/" class="flex items-center flex-shrink-0">
             <img
               class="block w-auto h-8 lg:hidden"
               src="/logo-black.png"
@@ -14,7 +14,7 @@
               src="/logo-black.png"
               alt="Plexus Market"
             />
-          </div>
+          </router-link>
           <div class="hidden sm:-my-px sm:ml-6 sm:flex">
             <router-link
               to="/"
@@ -36,7 +36,7 @@
         </div>
         <div class="hidden sm:ml-6 sm:flex sm:items-center">
           <router-link
-            to="/contact-us"
+            to="/contact"
             class="inline-flex items-center px-4 py-2 text-base font-medium leading-6 text-blue-600 transition duration-150 ease-in-out bg-white border border-transparent rounded-md shadow hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-indigo"
           >
             Contact Us
@@ -112,7 +112,7 @@
         <div class="pt-4 pb-3 border-t border-gray-200">
           <div class="px-5">
             <router-link
-              to="/contact-us"
+              to="/contact"
               class="inline-flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 text-blue-600 transition duration-150 ease-in-out bg-white border border-transparent rounded-md shadow hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-indigo"
             >
               Contact Us
