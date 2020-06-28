@@ -2,7 +2,7 @@
   <div>
     <p-header />
 
-    <div class="container min-h-screen px-5">
+    <div class="container min-h-screen px-5 pb-6">
       <div class="pb-8 mt-6 border-b">
         <div class="flex flex-col items-end">
           <label
