@@ -352,6 +352,162 @@
       </div>
     </div>
 
+    <div class="w-full bg-white">
+      <div class="container px-5 py-16 mx-auto">
+        <h2 class="mb-8 text-4xl font-bold text-center text-gray-800">
+          How to Create an Animated Logo <br />
+          with plexus.market?
+        </h2>
+
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+          <div class="text-center">
+            <i class="text-gray-800 fa-9x fas fa-th"></i>
+
+            <h3
+              class="mt-2 text-xl font-bold text-center text-gray-800 uppercase"
+            >
+              1. Pick a Template
+            </h3>
+          </div>
+          <div class="text-center">
+            <i class="text-gray-800 fa-9x fas fa-image"></i>
+
+            <h3
+              class="mt-2 text-xl font-bold text-center text-gray-800 uppercase"
+            >
+              1. Add your Logo
+            </h3>
+          </div>
+          <div class="text-center">
+            <i class="text-gray-800 fa-9x fas fa-play-circle"></i>
+
+            <h3
+              class="mt-2 text-xl font-bold text-center text-gray-800 uppercase"
+            >
+              1. get your video
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container px-5 py-16 mx-auto">
+      <h2 class="mb-10 text-4xl font-bold text-center text-gray-800">
+        Fast Online Creation <br />
+        with Professional Features
+      </h2>
+
+      <div class="grid grid-cols-1 gap-1 md:grid-cols-3">
+        <div class="py-10 pl-12 pr-4 bg-white">
+          <i class="text-gray-800 fas fa-play-circle fa-3x"></i>
+          <h3 class="mt-4 mb-2 text-lg font-bold text-gray-800">
+            Free Preview Videos
+          </h3>
+          <p class="text-gray-700">
+            All our animations can be previewed for free in web video resolution
+          </p>
+        </div>
+
+        <div class="py-10 pl-12 pr-4 bg-white">
+          <i class="text-gray-800 fas fa-stopwatch fa-3x"></i>
+          <h3 class="mt-4 mb-2 text-lg font-bold text-gray-800">
+            Fast Online Tool
+          </h3>
+          <p class="text-gray-700">
+            Create your own animation in 3 minutes. No software or design skills
+            needed
+          </p>
+        </div>
+
+        <div class="py-10 pl-12 pr-4 bg-white">
+          <i class="text-gray-800 fas fa-thumbs-up fa-3x"></i>
+          <h3 class="mt-4 mb-2 text-lg font-bold text-gray-800">
+            Easy and Safe
+          </h3>
+          <p class="text-gray-700">
+            Works in your browser. No commitment or plans. Directly download
+            your files
+          </p>
+        </div>
+
+        <div class="py-10 pl-12 pr-4 bg-white">
+          <i class="text-gray-800 fas fa-sliders-h fa-3x"></i>
+          <h3 class="mt-4 mb-2 text-lg font-bold text-gray-800">
+            Customizable
+          </h3>
+          <p class="text-gray-700">
+            Personalize your animation by adding your own logo and adjusting
+            colors
+          </p>
+        </div>
+
+        <div class="py-10 pl-12 pr-4 bg-white">
+          <i class="text-gray-800 fas fa-film fa-3x"></i>
+          <h3 class="mt-4 mb-2 text-lg font-bold text-gray-800">
+            Professional-Grade
+          </h3>
+          <p class="text-gray-700">
+            All animations are avaiable in HD/UHD video resolution and 25 or 30
+            FPS
+          </p>
+        </div>
+
+        <div class="py-10 pl-12 pr-4 bg-white">
+          <i class="text-gray-800 fas fa-scroll fa-3x"></i>
+          <h3 class="mt-4 mb-2 text-lg font-bold text-gray-800">
+            Commercial License
+          </h3>
+          <p class="text-gray-700">
+            Total freedom to use your purchases anywhere as much as you want
+            forever
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-2xl py-16 mx-auto">
+      <h2 class="mb-8 text-4xl font-bold text-center text-gray-800">
+        Get Your Animated Logo Now <br />
+        and Use it Everywhere
+      </h2>
+
+      <p class="text-xl text-gray-800">
+        All online templates are exclusively crafted by our experienced inhouse
+        animators and particularly designed for:
+      </p>
+
+      <ul class="pl-4 mt-6 text-xl text-gray-800 list-disc">
+        <li>Companies, Small Businesses, Startups, Entrepreneurs</li>
+        <li>
+          Logo Animations for Videos, Websites, Video Banners, Trailers,
+          E-Commerce
+        </li>
+        <li>Corporate Animation for Institutions, Clubs, Education, NGO's</li>
+        <li>Animation for Product Logos, Services, Promo and Marketing</li>
+      </ul>
+    </div>
+
+    <div class="max-w-2xl pt-16 pb-32 mx-auto">
+      <h2 class="mb-8 text-4xl font-bold text-center text-gray-800">
+        Try for Free Now
+      </h2>
+
+      <p class="text-xl text-gray-800">
+        Browse our gallery, find an animation you like and upload your logo.
+        Adjust colors, add free music and render your free preview video in 3
+        minutes.
+      </p>
+
+      <div class="mt-12 text-center">
+        <router-link
+          to="/products"
+          class="px-6 py-3 text-lg text-white bg-black rounded"
+        >
+          View Templates
+        </router-link>
+      </div>
+    </div>
+
     <transition
       enter-active-class="duration-300 ease-out"
       enter-class="opacity-0"
