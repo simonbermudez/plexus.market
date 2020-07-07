@@ -200,37 +200,23 @@
               <h2
                 class="mt-1 text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:leading-none sm:text-6xl lg:text-5xl xl:text-6xl"
               >
-                Data to enrich your
+                Video Animation
                 <br class="hidden md:inline" />
-                <span class="text-blue-600">online business </span>
+                <span class="text-blue-600">Maker for Brands </span>
               </h2>
+
               <p
-                class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
+                class="mt-3 mb-8 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
               >
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua ad ad non deserunt sunt.
+                Animate your logo in just a few clicks
               </p>
-              <div
-                class="mt-5 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0"
+
+              <router-link
+                to="/products"
+                class="px-5 py-3 text-sm font-medium text-center text-white uppercase transition duration-150 ease-in-out bg-blue-700 rounded hover:bg-blue-600 hover:text-white focus:outline-none focus:bg-blue-700 focus:text-white"
               >
-                <p class="text-base font-medium text-gray-900">
-                  Sign up to get notified when it’s ready.
-                </p>
-                <form action="#" method="POST" class="mt-3 sm:flex">
-                  <input
-                    aria-label="Email"
-                    class="block w-full px-3 py-3 text-base leading-6 placeholder-gray-500 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:placeholder-gray-400 focus:shadow-outline-blue focus:border-blue-300 sm:flex-1"
-                    placeholder="Enter your email"
-                  />
-                  <button
-                    type="submit"
-                    class="w-full px-6 py-3 mt-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-700 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray active:bg-gray-900 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
-                  >
-                    Notify me
-                  </button>
-                </form>
-              </div>
+                Animate My Logo
+              </router-link>
             </div>
             <div
               class="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center"
