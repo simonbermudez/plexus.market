@@ -53,7 +53,7 @@
 
                 <p class="leading-relaxed">
                   <vue-markdown
-                    :source="video.snippet.description"
+                    :source="'Get your video starting from 0$!'"
                     :anchorAttributes="anchorAttrs"
                     toc-anchor-link-class="underline"
                   />
@@ -64,12 +64,22 @@
                     <p
                       class="block font-medium text-gray-900 text-md title-font"
                     >
-                      $7.00 <span class="text-gray-500">1080p</span>
+                      $0
+                      <span class="text-gray-500"
+                        >720p with Plexus Market Watermark</span
+                      >
                     </p>
                     <p
                       class="block font-medium text-gray-900 text-md title-font"
                     >
-                      $14.00 <span class="text-gray-500">4K</span>
+                      $7.00
+                      <span class="text-gray-500">1080p</span>
+                    </p>
+                    <p
+                      class="block font-medium text-gray-900 text-md title-font"
+                    >
+                      $14.00
+                      <span class="text-gray-500">4K</span>
                     </p>
                   </div>
 
@@ -78,9 +88,8 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="flex px-6 py-2 ml-auto text-white transition-all duration-200 bg-blue-500 border-0 rounded focus:outline-none hover:bg-blue-600"
+                    >Buy Now</a
                   >
-                    Buy Now
-                  </a>
                 </div>
               </div>
             </div>
