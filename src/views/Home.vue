@@ -85,15 +85,13 @@
               <router-link
                 to="/"
                 class="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
+                >Home</router-link
               >
-                Home
-              </router-link>
               <router-link
                 to="/products"
                 class="ml-10 font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
+                >Products</router-link
               >
-                Products
-              </router-link>
             </div>
           </div>
           <div class="hidden text-right md:block">
@@ -102,9 +100,8 @@
                 <router-link
                   to="/contact"
                   class="inline-flex items-center px-4 py-2 text-base font-medium leading-6 text-blue-600 transition duration-150 ease-in-out bg-white border border-transparent rounded-md hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-indigo"
+                  >Contact Us</router-link
                 >
-                  Contact Us
-                </router-link>
               </span>
             </span>
           </div>
@@ -165,25 +162,22 @@
                     to="/"
                     class="block px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50"
                     role="menuitem"
+                    >Home</router-link
                   >
-                    Home
-                  </router-link>
                   <router-link
                     to="/products"
                     class="block px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50"
                     role="menuitem"
+                    >Products</router-link
                   >
-                    Products
-                  </router-link>
                 </div>
                 <div>
                   <router-link
                     to="/contact"
                     class="block w-full px-5 py-3 font-medium text-center text-blue-600 transition duration-150 ease-in-out bg-gray-50 hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:bg-gray-100 focus:text-blue-700"
                     role="menuitem"
+                    >Contact Us</router-link
                   >
-                    Contact Us
-                  </router-link>
                 </div>
               </div>
             </div>
@@ -202,21 +196,21 @@
               >
                 Video Animation
                 <br class="hidden md:inline" />
-                <span class="text-blue-600">Maker for Brands </span>
+                <span class="text-blue-600">Maker for Brands</span>
               </h2>
 
               <p
                 class="mt-3 mb-8 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
               >
                 Animate your logo in just a few clicks
+                <br />Starting from 0$
               </p>
 
               <router-link
                 to="/products"
                 class="px-5 py-3 text-sm font-medium text-center text-white uppercase transition duration-150 ease-in-out bg-blue-700 rounded hover:bg-blue-600 hover:text-white focus:outline-none focus:bg-blue-700 focus:text-white"
+                >Animate My Logo</router-link
               >
-                Animate My Logo
-              </router-link>
             </div>
             <div
               class="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center"
@@ -304,8 +298,8 @@
 
     <div class="max-w-2xl pt-16 pb-8 mx-auto">
       <h2 class="text-4xl font-bold text-center text-gray-800">
-        Beautiful Logo Animations <br />
-        for Brands and Business Videos
+        Beautiful Logo Animations
+        <br />for Brands and Business Videos
       </h2>
 
       <p class="mt-6 text-center text-gray-500">
@@ -317,8 +311,8 @@
 
     <div class="max-w-2xl pt-8 pb-16 mx-auto">
       <h2 class="text-4xl font-bold text-center text-gray-800">
-        Create Your Animation in 3 Minutes <br />
-        with our Online Templates
+        Create Your Animation in 3 Minutes
+        <br />with our Online Templates
       </h2>
 
       <p class="mt-6 text-center text-gray-500">
@@ -332,17 +326,16 @@
         <router-link
           to="/products"
           class="px-6 py-3 text-lg text-white bg-black rounded"
+          >View Templates</router-link
         >
-          View Templates
-        </router-link>
       </div>
     </div>
 
     <div class="w-full bg-white">
       <div class="container px-5 py-16 mx-auto">
         <h2 class="mb-8 text-4xl font-bold text-center text-gray-800">
-          How to Create an Animated Logo <br />
-          with plexus.market?
+          How to Create an Animated Logo
+          <br />with plexus.market?
         </h2>
 
         <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -379,8 +372,8 @@
 
     <div class="container px-5 py-16 mx-auto">
       <h2 class="mb-10 text-4xl font-bold text-center text-gray-800">
-        Fast Online Creation <br />
-        with Professional Features
+        Fast Online Creation
+        <br />with Professional Features
       </h2>
 
       <div class="grid grid-cols-1 gap-1 md:grid-cols-3">
@@ -453,8 +446,8 @@
 
     <div class="max-w-2xl py-16 mx-auto">
       <h2 class="mb-8 text-4xl font-bold text-center text-gray-800">
-        Get Your Animated Logo Now <br />
-        and Use it Everywhere
+        Get Your Animated Logo Now
+        <br />and Use it Everywhere
       </h2>
 
       <p class="text-xl text-gray-800">
@@ -488,9 +481,8 @@
         <router-link
           to="/products"
           class="px-6 py-3 text-lg text-white bg-black rounded"
+          >View Templates</router-link
         >
-          View Templates
-        </router-link>
       </div>
     </div>
 
