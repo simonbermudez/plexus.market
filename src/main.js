@@ -20,6 +20,7 @@ Vue.use(VueLazyload)
 Vue.use(Plugin)
 Vue.use(VueAnalytics, {
   id: process.env.VUE_APP_ANALYTICS,
+  router
 })
 Vue.use(VueSpinners)
 
