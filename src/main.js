@@ -19,12 +19,12 @@ Vue.config.productionTip = false
 Vue.use(VueLazyload)
 Vue.use(Plugin)
 Vue.use(VueAnalytics, {
-  id: process.env.VUE_APP_ANALYTICS,
+  id: process.env.VUE_APP_ANALYTICS
 })
 Vue.use(VueSpinners)
 
 // Initialize
 new Vue({
   router,
-  render: h => h(App),
+  render: h => h(App)
 }).$mount('#app')
