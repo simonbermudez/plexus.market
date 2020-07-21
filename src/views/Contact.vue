@@ -72,12 +72,9 @@
           <h2
             class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
           >
-            Contact sales
+            Contact Us
           </h2>
-          <p class="mt-4 text-lg leading-6 text-gray-500">
-            Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat
-            massa dictumst amet. Sapien tortor lacus arcu.
-          </p>
+          <p class="mt-4 text-lg leading-6 text-gray-500">Let's Talk!</p>
         </div>
         <div class="mt-12 kwes-form">
           <form
@@ -89,9 +86,8 @@
               <label
                 for="first_name"
                 class="block text-sm font-medium leading-5 text-gray-700"
+                >First name</label
               >
-                First name
-              </label>
               <div class="relative mt-1 rounded-md shadow-sm">
                 <input
                   id="first_name"
@@ -105,9 +101,8 @@
               <label
                 for="last_name"
                 class="block text-sm font-medium leading-5 text-gray-700"
+                >Last name</label
               >
-                Last name
-              </label>
               <div class="relative mt-1 rounded-md shadow-sm">
                 <input
                   id="last_name"
@@ -120,9 +115,8 @@
               <label
                 for="company"
                 class="block text-sm font-medium leading-5 text-gray-700"
+                >Company</label
               >
-                Company
-              </label>
               <div class="relative mt-1 rounded-md shadow-sm">
                 <input
                   id="company"
@@ -135,9 +129,8 @@
               <label
                 for="email"
                 class="block text-sm font-medium leading-5 text-gray-700"
+                >Email</label
               >
-                Email
-              </label>
               <div class="relative mt-1 rounded-md shadow-sm">
                 <input
                   id="email"
@@ -151,9 +144,8 @@
               <label
                 for="phone_number"
                 class="block text-sm font-medium leading-5 text-gray-700"
+                >Phone Number</label
               >
-                Phone Number
-              </label>
               <div class="relative mt-1 rounded-md shadow-sm">
                 <div class="absolute inset-y-0 left-0 flex items-center">
                   <select
@@ -161,9 +153,9 @@
                     name="countryNumber"
                     class="h-full py-0 pl-4 pr-8 text-gray-500 transition duration-150 ease-in-out bg-transparent border-transparent form-select"
                   >
-                    <option>US </option>
-                    <option>CA </option>
-                    <option>EU </option>
+                    <option>US</option>
+                    <option>CA</option>
+                    <option>EU</option>
                   </select>
                 </div>
                 <input
@@ -178,9 +170,8 @@
               <label
                 for="message"
                 class="block text-sm font-medium leading-5 text-gray-700"
+                >Message</label
               >
-                Message
-              </label>
               <div class="relative mt-1 rounded-md shadow-sm">
                 <textarea
                   id="message"
@@ -217,12 +208,12 @@
                 <div class="ml-3">
                   <p class="text-base leading-6 text-gray-500">
                     By selecting this, you agree to the
-                    <a href="#" class="font-medium text-gray-700 underline">
-                      Privacy Policy
-                    </a>
+                    <a href="#" class="font-medium text-gray-700 underline"
+                      >Privacy Policy</a
+                    >
                     and
-                    <a href="#" class="font-medium text-gray-700 underline">
-                      Cookie Policy </a
+                    <a href="#" class="font-medium text-gray-700 underline"
+                      >Cookie Policy</a
                     >.
                   </p>
                 </div>
