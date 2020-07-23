@@ -25,6 +25,14 @@
               Home
             </router-link>
             <router-link
+              to="/how-it-works"
+              class="inline-flex items-center px-1 pt-1 ml-8 text-sm font-medium leading-5 text-gray-500 transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300"
+              active-class="text-gray-900 border-b-2 border-indigo-500"
+              exact
+            >
+              How It Works
+            </router-link>
+            <router-link
               to="/products"
               class="inline-flex items-center px-1 pt-1 ml-8 text-sm font-medium leading-5 text-gray-500 transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300"
               active-class="text-gray-900 border-b-2 border-indigo-500"
@@ -98,6 +106,14 @@
             active-class="text-indigo-700 border-indigo-500 bg-indigo-50 focus:text-indigo-800 focus:bg-indigo-100 focus:border-indigo-700"
           >
             Home
+          </router-link>
+          <router-link
+            exact
+            to="/how-it-works"
+            class="block py-2 pl-3 pr-4 mt-1 text-base font-medium text-gray-600 transition duration-150 ease-in-out border-l-4 border-transparent hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300"
+            active-class="text-indigo-700 border-indigo-500 bg-indigo-50 focus:text-indigo-800 focus:bg-indigo-100 focus:border-indigo-700"
+          >
+            How It Works
           </router-link>
           <router-link
             exact
