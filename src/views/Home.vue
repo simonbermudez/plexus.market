@@ -194,23 +194,20 @@
               <h2
                 class="mt-1 text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:leading-none sm:text-6xl lg:text-5xl xl:text-6xl"
               >
-                Video Animation
+                DATA DRIVEN,
                 <br class="hidden md:inline" />
-                <span class="text-blue-600">Maker for Brands</span>
+                <span class="text-blue-600">PERSONALIZED VIDEOS</span>
+                <br class="hidden md:inline" />
+                AT SCALE AND SPEED
               </h2>
 
-              <p
-                class="mt-3 mb-8 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
-              >
-                Animate your logo in just a few clicks
-                <br />Starting from 0$
-              </p>
-
-              <router-link
-                to="/products"
-                class="px-5 py-3 text-sm font-medium text-center text-white uppercase transition duration-150 ease-in-out bg-blue-700 rounded hover:bg-blue-600 hover:text-white focus:outline-none focus:bg-blue-700 focus:text-white"
-                >Animate My Logo</router-link
-              >
+              <div class="mt-6">
+                <router-link
+                  to="/how-it-work"
+                  class="px-5 py-3 text-lg font-medium text-center text-white uppercase transition duration-150 ease-in-out bg-blue-700 rounded hover:bg-blue-600 hover:text-white focus:outline-none focus:bg-blue-700 focus:text-white"
+                  >HOW DOES IT WORK</router-link
+                >
+              </div>
             </div>
             <div
               class="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center"
@@ -296,194 +293,232 @@
       </div>
     </div>
 
-    <div class="max-w-2xl pt-16 pb-8 mx-auto">
-      <h2 class="text-4xl font-bold text-center text-gray-800">
-        Beautiful Logo Animations
-        <br />for Brands and Business Videos
-      </h2>
-
-      <p class="mt-6 text-center text-gray-500">
-        Having a high quality logo animation, logo intro or logo ending for your
-        videos is crucial. These short animations act like a business card for
-        your videos on your website, social media and promo video productions.
-      </p>
-    </div>
-
-    <div class="max-w-2xl pt-8 pb-16 mx-auto">
-      <h2 class="text-4xl font-bold text-center text-gray-800">
-        Create Your Animation in 3 Minutes
-        <br />with our Online Templates
-      </h2>
-
-      <p class="mt-6 text-center text-gray-500">
-        Our automated logo animation templates enable you to create a
-        professionally animated logo in less than 3 minutes in a few clicks!
-        Preview your video for free and try different animations. No software or
-        design skills needed.
-      </p>
-
-      <div class="mt-12 text-center">
-        <router-link
-          to="/products"
-          class="px-6 py-3 text-lg text-white bg-black rounded"
-          >View Templates</router-link
-        >
-      </div>
-    </div>
-
-    <div class="w-full bg-white">
-      <div class="container px-5 py-16 mx-auto">
-        <h2 class="mb-8 text-4xl font-bold text-center text-gray-800">
-          How to Create an Animated Logo
-          <br />with plexus.market?
+    <div
+      class="container grid items-center grid-cols-1 gap-12 px-5 mt-16 md:grid-cols-2"
+    >
+      <div class="flex flex-col justify-between h-full max-w-2xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-gray-800">
+          WHAT IS PLEXUS MARKET?
         </h2>
 
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
-          <div class="text-center">
-            <i class="text-gray-800 fa-9x fas fa-th"></i>
+        <p class="mt-6 text-center text-gray-500">
+          Plexus Market is a cloud based personalized dynamic video rendering
+          platform that can be used to hyper-target your audience with
+          individualized content at scale. It’s a cost-effective solution to
+          help your next campaign breakthrough, drive your next story, or power
+          your next big idea.
+        </p>
+      </div>
 
-            <h3
-              class="mt-2 text-xl font-bold text-center text-gray-800 uppercase"
-            >
-              1. Pick a Template
-            </h3>
-          </div>
-          <div class="text-center">
-            <i class="text-gray-800 fa-9x fas fa-image"></i>
+      <div class="flex flex-col justify-between h-full max-w-2xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-gray-800">
+          PERSONALIZED MARKETING
+        </h2>
 
-            <h3
-              class="mt-2 text-xl font-bold text-center text-gray-800 uppercase"
-            >
-              1. Add your Logo
-            </h3>
-          </div>
-          <div class="text-center">
-            <i class="text-gray-800 fa-9x fas fa-play-circle"></i>
+        <p class="mt-6 text-center text-gray-500">
+          Bring the benefits of personalized marketing to your brand with Plexus
+          Market, the gold standard in dynamic video rendering. Our flexible
+          software lets you easily create dynamic video campaigns that are
+          affordable, efficient, and effective.
+        </p>
+      </div>
 
-            <h3
-              class="mt-2 text-xl font-bold text-center text-gray-800 uppercase"
-            >
-              1. get your video
-            </h3>
-          </div>
-        </div>
+      <div class="flex flex-col justify-between h-full max-w-2xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-gray-800">
+          DATA-DRIVEN STORYTELLING
+        </h2>
+
+        <p class="mt-6 text-center text-gray-500">
+          Increase engagement with data-driven storytelling and contextualized
+          marketing using the fastest dynamic video rendering technology on the
+          market. It’s the choice of top creative agencies and storytellers
+          around the world.
+        </p>
+      </div>
+
+      <div class="flex flex-col justify-between h-full max-w-2xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-gray-800">
+          DYNAMIC VIDEO ADS
+        </h2>
+
+        <p class="mt-6 text-center text-gray-500">
+          Get higher click throughs and higher ROI with the evolution of video
+          marketing, Plexus-generated dynamic video ad units. We
+          programmatically deliver dynamic video ads to any ad server to reach
+          singular audience members.
+        </p>
       </div>
     </div>
 
-    <div class="container px-5 py-16 mx-auto">
-      <h2 class="mb-10 text-4xl font-bold text-center text-gray-800">
-        Fast Online Creation
-        <br />with Professional Features
-      </h2>
-
-      <div class="grid grid-cols-1 gap-1 md:grid-cols-3">
-        <div class="py-10 pl-12 pr-4 bg-white">
-          <i class="text-gray-800 fas fa-play-circle fa-3x"></i>
-          <h3 class="mt-4 mb-2 text-lg font-bold text-gray-800">
-            Free Preview Videos
-          </h3>
-          <p class="text-gray-700">
-            All our animations can be previewed for free in web video resolution
-          </p>
-        </div>
-
-        <div class="py-10 pl-12 pr-4 bg-white">
-          <i class="text-gray-800 fas fa-stopwatch fa-3x"></i>
-          <h3 class="mt-4 mb-2 text-lg font-bold text-gray-800">
-            Fast Online Tool
-          </h3>
-          <p class="text-gray-700">
-            Create your own animation in 3 minutes. No software or design skills
-            needed
-          </p>
-        </div>
-
-        <div class="py-10 pl-12 pr-4 bg-white">
-          <i class="text-gray-800 fas fa-thumbs-up fa-3x"></i>
-          <h3 class="mt-4 mb-2 text-lg font-bold text-gray-800">
-            Easy and Safe
-          </h3>
-          <p class="text-gray-700">
-            Works in your browser. No commitment or plans. Directly download
-            your files
-          </p>
-        </div>
-
-        <div class="py-10 pl-12 pr-4 bg-white">
-          <i class="text-gray-800 fas fa-sliders-h fa-3x"></i>
-          <h3 class="mt-4 mb-2 text-lg font-bold text-gray-800">
-            Customizable
-          </h3>
-          <p class="text-gray-700">
-            Personalize your animation by adding your own logo and adjusting
-            colors
-          </p>
-        </div>
-
-        <div class="py-10 pl-12 pr-4 bg-white">
-          <i class="text-gray-800 fas fa-film fa-3x"></i>
-          <h3 class="mt-4 mb-2 text-lg font-bold text-gray-800">
-            Professional-Grade
-          </h3>
-          <p class="text-gray-700">
-            All animations are avaiable in HD/UHD video resolution and 25 or 30
-            FPS
-          </p>
-        </div>
-
-        <div class="py-10 pl-12 pr-4 bg-white">
-          <i class="text-gray-800 fas fa-scroll fa-3x"></i>
-          <h3 class="mt-4 mb-2 text-lg font-bold text-gray-800">
-            Commercial License
-          </h3>
-          <p class="text-gray-700">
-            Total freedom to use your purchases anywhere as much as you want
-            forever
-          </p>
-        </div>
-      </div>
+    <div class="container px-10">
+      <hr class="my-16" />
     </div>
 
-    <div class="max-w-2xl py-16 mx-auto">
-      <h2 class="mb-8 text-4xl font-bold text-center text-gray-800">
-        Get Your Animated Logo Now
-        <br />and Use it Everywhere
+    <div class="container px-5">
+      <h2 class="mb-4 text-4xl font-bold text-gray-700 uppercase">
+        Benefits of Plexus
       </h2>
 
-      <p class="text-xl text-gray-800">
-        All online templates are exclusively crafted by our experienced inhouse
-        animators and particularly designed for:
-      </p>
+      <ul
+        class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+      >
+        <li class="col-span-1 bg-white rounded-lg shadow">
+          <div class="p-6">
+            <h2 class="text-xl font-bold text-gray-700 uppercase">
+              AFFORDABILITY
+            </h2>
 
-      <ul class="pl-4 mt-6 text-xl text-gray-800 list-disc">
-        <li>Companies, Small Businesses, Startups, Entrepreneurs</li>
-        <li>
-          Logo Animations for Videos, Websites, Video Banners, Trailers,
-          E-Commerce
+            <hr class="w-20 mt-1" />
+
+            <p class="mt-2 text-gray-600">
+              Plexus fits within any campaign budget and timeline
+            </p>
+          </div>
         </li>
-        <li>Corporate Animation for Institutions, Clubs, Education, NGO's</li>
-        <li>Animation for Product Logos, Services, Promo and Marketing</li>
+
+        <li class="col-span-1 bg-white rounded-lg shadow">
+          <div class="p-6">
+            <h2 class="text-xl font-bold text-gray-700 uppercase">
+              TURNKEY SOLUTION
+            </h2>
+
+            <hr class="w-20 mt-1" />
+
+            <p class="mt-2 text-gray-600">
+              An out-of-the-box tool for quickly creating dynamic video.
+            </p>
+          </div>
+        </li>
+
+        <li class="col-span-1 bg-white rounded-lg shadow">
+          <div class="p-6">
+            <h2 class="text-xl font-bold text-gray-700 uppercase">
+              HIGH EFFICIENCY
+            </h2>
+
+            <hr class="w-20 mt-1" />
+
+            <p class="mt-2 text-gray-600">
+              Our low cost, pre-tested solution means high efficiency.
+            </p>
+          </div>
+        </li>
+
+        <li class="col-span-1 bg-white rounded-lg shadow">
+          <div class="p-6">
+            <h2 class="text-xl font-bold text-gray-700 uppercase">
+              SCALABILITY
+            </h2>
+
+            <hr class="w-20 mt-1" />
+
+            <p class="mt-2 text-gray-600">
+              Unmatched performance for captivating millions.
+            </p>
+          </div>
+        </li>
       </ul>
     </div>
 
-    <div class="max-w-2xl pt-16 pb-32 mx-auto">
-      <h2 class="mb-8 text-4xl font-bold text-center text-gray-800">
-        Try for Free Now
-      </h2>
+    <div class="container px-10">
+      <hr class="mt-16" />
+    </div>
 
-      <p class="text-xl text-gray-800">
-        Browse our gallery, find an animation you like and upload your logo.
-        Adjust colors, add free music and render your free preview video in 3
-        minutes.
-      </p>
+    <div class="container px-5 mt-16 mb-32">
+      <h2 class="mb-4 text-4xl font-bold text-gray-700 uppercase">Features</h2>
 
-      <div class="mt-12 text-center">
-        <router-link
-          to="/products"
-          class="px-6 py-3 text-lg text-white bg-black rounded"
-          >View Templates</router-link
-        >
-      </div>
+      <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <li class="col-span-1 bg-white rounded-lg shadow">
+          <div class="p-6">
+            <h2 class="text-xl font-bold text-gray-700 uppercase">
+              SOCIAL CONNECTIVITY
+            </h2>
+
+            <hr class="w-20 mt-1" />
+
+            <p class="mt-2 text-gray-600">
+              Data from social media can be used to individualize videos for
+              deeper engagements.
+            </p>
+          </div>
+        </li>
+
+        <li class="col-span-1 bg-white rounded-lg shadow">
+          <div class="p-6">
+            <h2 class="text-xl font-bold text-gray-700 uppercase">
+              LET'S MAKE SOME MAGIC
+            </h2>
+
+            <hr class="w-20 mt-1" />
+
+            <p class="mt-2 text-gray-600">
+              Take your video marketing to the next level and increase ROI by
+              unleashing Plexus Market’s suite of cutting-edge features for your
+              next campaign.
+            </p>
+          </div>
+        </li>
+
+        <li class="col-span-1 bg-white rounded-lg shadow">
+          <div class="p-6">
+            <h2 class="text-xl font-bold text-gray-700 uppercase">
+              MOTION TRACKING
+            </h2>
+
+            <hr class="w-20 mt-1" />
+
+            <p class="mt-2 text-gray-600">
+              User generated images, text, or video can be realistically
+              integrated to personalized any video.
+            </p>
+          </div>
+        </li>
+
+        <li class="col-span-1 bg-white rounded-lg shadow">
+          <div class="p-6">
+            <h2 class="text-xl font-bold text-gray-700 uppercase">
+              DYNAMIC TEXT
+            </h2>
+
+            <hr class="w-20 mt-1" />
+
+            <p class="mt-2 text-gray-600">
+              Text in a video can be customized, randomized, or individualized,
+              and blended into a scene.
+            </p>
+          </div>
+        </li>
+
+        <li class="col-span-1 bg-white rounded-lg shadow">
+          <div class="p-6">
+            <h2 class="text-xl font-bold text-gray-700 uppercase">
+              CLIP SWAPPING
+            </h2>
+
+            <hr class="w-20 mt-1" />
+
+            <p class="mt-2 text-gray-600">
+              Different video clips can be injected at different times to
+              customize and individualize videos.
+            </p>
+          </div>
+        </li>
+
+        <li class="col-span-1 bg-white rounded-lg shadow">
+          <div class="p-6">
+            <h2 class="text-xl font-bold text-gray-700 uppercase">
+              ROTOSCOPING
+            </h2>
+
+            <hr class="w-20 mt-1" />
+
+            <p class="mt-2 text-gray-600">
+              Mask out dynamic objects over dynamic video to customize a scene
+              with unique elements.
+            </p>
+          </div>
+        </li>
+      </ul>
     </div>
 
     <transition
