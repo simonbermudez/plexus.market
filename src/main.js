@@ -24,6 +24,11 @@ Vue.use(VueAnalytics, {
 })
 Vue.use(VueSpinners)
 
+// kwes Forms
+let kwesScript = document.createElement('script')
+kwesScript.setAttribute('src', 'https://kwes.io/js/v2/kwes.js')
+document.head.appendChild(kwesScript)
+
 // Initialize
 new Vue({
   router,

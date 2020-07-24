@@ -82,33 +82,37 @@
             method="POST"
             class="grid grid-cols-1 row-gap-6 sm:grid-cols-2 sm:col-gap-8"
           >
-            <div>
-              <label
-                for="first_name"
-                class="block text-sm font-medium leading-5 text-gray-700"
-                >First name</label
-              >
-              <div class="relative mt-1 rounded-md shadow-sm">
-                <input
-                  id="first_name"
-                  name="firstName"
-                  class="block w-full px-4 py-3 transition duration-150 ease-in-out form-input"
-                  rules="required|min:3|max:20"
-                />
+            <div
+              class="grid grid-cols-1 row-gap-6 sm:grid-cols-2 sm:col-gap-8 sm:col-span-2"
+            >
+              <div>
+                <label
+                  for="first_name"
+                  class="block text-sm font-medium leading-5 text-gray-700"
+                  >First name</label
+                >
+                <div class="relative mt-1 rounded-md shadow-sm">
+                  <input
+                    id="first_name"
+                    name="firstName"
+                    class="block w-full px-4 py-3 transition duration-150 ease-in-out form-input"
+                    rules="required|min:3|max:20"
+                  />
+                </div>
               </div>
-            </div>
-            <div>
-              <label
-                for="last_name"
-                class="block text-sm font-medium leading-5 text-gray-700"
-                >Last name</label
-              >
-              <div class="relative mt-1 rounded-md shadow-sm">
-                <input
-                  id="last_name"
-                  name="lastName"
-                  class="block w-full px-4 py-3 transition duration-150 ease-in-out form-input"
-                />
+              <div>
+                <label
+                  for="last_name"
+                  class="block text-sm font-medium leading-5 text-gray-700"
+                  >Last name</label
+                >
+                <div class="relative mt-1 rounded-md shadow-sm">
+                  <input
+                    id="last_name"
+                    name="lastName"
+                    class="block w-full px-4 py-3 transition duration-150 ease-in-out form-input"
+                  />
+                </div>
               </div>
             </div>
             <div class="sm:col-span-2">
