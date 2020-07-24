@@ -78,7 +78,7 @@
         </div>
         <div class="mt-12 kwes-form">
           <form
-            action="https://kwes.io/api/foreign/forms/UwZVIfsxhtwQ3mKnt5sO"
+            action="https://kwes.io/api/foreign/forms/pYxeb1oxK52MDVnsFHvY"
             method="POST"
             class="grid grid-cols-1 row-gap-6 sm:grid-cols-2 sm:col-gap-8"
           >
