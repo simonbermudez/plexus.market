@@ -27,6 +27,14 @@ export default new Router({
       component: () => import('@/views/HowItWorks'),
     },
     {
+      path: '/faqs',
+      name: 'faqs',
+      // route level code-splitting
+      // this generate a separate chunk ([route-name].[hash].js) for this route
+      // which is lazy-loaded when the route is visited
+      component: () => import('@/views/FAQs'),
+    },
+    {
       path: '/products',
       name: 'products',
       // route level code-splitting

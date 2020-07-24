@@ -394,7 +394,6 @@ import pHeader from '@/components/pHeader'
 export default {
   name: 'HowItWorks',
   data: () => ({
-    isOpen: false,
     isOpenModal: false,
   }),
   components: { pHeader },

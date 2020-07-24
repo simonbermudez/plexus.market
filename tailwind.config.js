@@ -46,7 +46,11 @@ module.exports = {
   },
   variants: {
     aspectRatio: ['responsive'],
+    borderColor: ['responsive', 'first'],
+    borderWidth: ['responsive', 'first'],
+    margin: ['responsive', 'first'],
     maxHeight: ['responsive', 'group-hover'],
+    padding: ['responsive', 'first'],
   },
   plugins: [
     require('@tailwindcss/ui'),

@@ -93,6 +93,11 @@
                 >How It Works</router-link
               >
               <router-link
+                to="/faqs"
+                class="ml-10 font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
+                >FAQs</router-link
+              >
+              <router-link
                 to="/products"
                 class="ml-10 font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
                 >Products</router-link
@@ -174,6 +179,12 @@
                     class="block px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50"
                     role="menuitem"
                     >How It Works</router-link
+                  >
+                  <router-link
+                    to="/faqs"
+                    class="block px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50"
+                    role="menuitem"
+                    >FAQs</router-link
                   >
                   <router-link
                     to="/products"
