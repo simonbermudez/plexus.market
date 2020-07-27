@@ -100,65 +100,65 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script>
       var app = new Vue({
-        el: "#app",
+        el: '#app',
         data: {
           apiURL:
-            "http://ec2-54-157-162-149.compute-1.amazonaws.com:3000/api/v1/jobs",
+            'http://ec2-54-157-162-149.compute-1.amazonaws.com:3000/api/v1/jobs',
           jobs: [],
         },
 
         methods: {
           updateJobs() {
             fetch(this.apiURL, {
-              method: "get",
-              headers: { "nexrender-secret": "l10nh3arT" },
+              method: 'get',
+              headers: { 'nexrender-secret': 'l10nh3arT' },
             })
-              .then((response) => response.json())
-              .then((data) => {
-                this.jobs = data.reverse();
-              });
+              .then(response => response.json())
+              .then(data => {
+                this.jobs = data.reverse()
+              })
           },
           deleteJob(id) {
-            console.log(this.apiURL + "/" + id);
-            fetch(this.apiURL + "/" + id, {
-              method: "delete",
-              headers: { "nexrender-secret": "l10nh3arT" },
-            }).then((r) => {
-              console.log(r);
-              this.updateJobs();
-            });
+            console.log(this.apiURL + '/' + id)
+            fetch(this.apiURL + '/' + id, {
+              method: 'delete',
+              headers: { 'nexrender-secret': 'l10nh3arT' },
+            }).then(r => {
+              console.log(r)
+              this.updateJobs()
+            })
           },
           deleteAllJobs() {
             for (job of this.jobs) {
-              this.deleteJob(job.uid);
+              this.deleteJob(job.uid)
             }
           },
           resendJob(job) {
-            delete job.uid;
+            delete job.uid
             fetch(this.apiURL, {
-              method: "POST", // *GET, POST, PUT, DELETE, etc.
-              mode: "cors", // no-cors, *cors, same-origin
-              cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-              credentials: "same-origin", // include, *same-origin, omit
+              method: 'POST', // *GET, POST, PUT, DELETE, etc.
+              mode: 'cors', // no-cors, *cors, same-origin
+              cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+              credentials: 'same-origin', // include, *same-origin, omit
               headers: {
-                "Content-Type": "application/json",
-                "nexrender-secret": "l10nh3arT",
+                'Content-Type': 'application/json',
+                'nexrender-secret': 'l10nh3arT',
               },
-              redirect: "follow", // manual, *follow, error
-              referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+              redirect: 'follow', // manual, *follow, error
+              referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
               body: JSON.stringify(job), // body data type must match "Content-Type" header
-            }).then((r) => {
-              console.log(r);
-              this.updateJobs();
-            });
+            }).then(r => {
+              console.log(r)
+              this.updateJobs()
+            })
           },
         },
 
         created() {
-          this.updateJobs();
-          setInterval(this.updateJobs, 5000);
+          this.updateJobs()
+          setInterval(this.updateJobs, 5000)
         },
-      });
+      })
     </script>
   </body>
 </html>
