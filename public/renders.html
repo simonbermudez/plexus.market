@@ -43,6 +43,9 @@
       <table class="table">
         <tr>
           <th>
+            Updated At
+          </th>
+          <th>
             ID
           </th>
           <th>
@@ -62,6 +65,9 @@
           </th>
         </tr>
         <tr v-for="job of jobs" :class="[job.state.split(':')[0]]">
+          <td>
+            {{ job.updatedAt || "-" }}
+          </td>
           <td>
             {{ job.uid }}
           </td>
@@ -102,8 +108,8 @@
       var app = new Vue({
         el: '#app',
         data: {
-          apiURL:
-            'http://ec2-54-157-162-149.compute-1.amazonaws.com:3000/api/v1/jobs',
+          apiURL: 'http://192.168.2.222:3000/api/v1/jobs',
+          // 'http://ec2-54-157-162-149.compute-1.amazonaws.com:3000/api/v1/jobs',
           jobs: [],
         },
 

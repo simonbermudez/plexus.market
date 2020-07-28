@@ -219,8 +219,7 @@
                 DATA DRIVEN,
                 <br class="hidden md:inline" />
                 <span class="text-blue-600">PERSONALIZED VIDEOS</span>
-                <br class="hidden md:inline" />
-                AT SCALE AND SPEED
+                <br class="hidden md:inline" />AT SCALE AND SPEED
               </h2>
 
               <div class="mt-6">
@@ -582,7 +581,7 @@
             type="text/html"
             width="640"
             height="360"
-            src="https://www.youtube.com/embed/S-B8-93Y_ZM?autoplay=1&enablejsapi=1&modestbranding=1&rel=0&showinfo=0"
+            src="https://www.youtube.com/embed/agbVL_WqXaY?autoplay=1&enablejsapi=1&modestbranding=1&rel=0&showinfo=0"
             frameborder="0"
           />
         </div>
