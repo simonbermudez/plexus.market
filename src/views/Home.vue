@@ -224,7 +224,7 @@
 
               <div class="mt-6">
                 <router-link
-                  to="/how-it-work"
+                  to="/how-it-works"
                   class="px-5 py-3 text-lg font-medium text-center text-white uppercase transition duration-150 ease-in-out bg-blue-700 rounded hover:bg-blue-600 hover:text-white focus:outline-none focus:bg-blue-700 focus:text-white"
                   >HOW DOES IT WORK</router-link
                 >
@@ -581,7 +581,7 @@
             type="text/html"
             width="640"
             height="360"
-            src="https://www.youtube.com/embed/agbVL_WqXaY?autoplay=1&enablejsapi=1&modestbranding=1&rel=0&showinfo=0"
+            src="https://www.youtube.com/embed/agbVL_WqXaY&enablejsapi=1&modestbranding=1&rel=0&showinfo=0"
             frameborder="0"
           />
         </div>

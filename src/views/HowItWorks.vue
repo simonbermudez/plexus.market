@@ -121,7 +121,7 @@
                     fill-rule="evenodd"
                     d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"
                     clip-rule="evenodd"
-                  ></path>
+                  />
                 </svg>
               </div>
               <div class="mt-5">
@@ -145,7 +145,7 @@
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                   <path
                     d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"
-                  ></path>
+                  />
                 </svg>
               </div>
               <div class="mt-5">
@@ -170,7 +170,7 @@
                     fill-rule="evenodd"
                     d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z"
                     clip-rule="evenodd"
-                  ></path>
+                  />
                 </svg>
               </div>
               <div class="mt-5">
@@ -195,7 +195,7 @@
                     fill-rule="evenodd"
                     d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z"
                     clip-rule="evenodd"
-                  ></path>
+                  />
                 </svg>
               </div>
               <div class="mt-5">
@@ -219,7 +219,7 @@
                     fill-rule="evenodd"
                     d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z"
                     clip-rule="evenodd"
-                  ></path>
+                  />
                 </svg>
               </div>
               <div class="mt-5">
@@ -378,7 +378,7 @@
             type="text/html"
             width="640"
             height="360"
-            src="https://www.youtube.com/embed/S-B8-93Y_ZM?autoplay=1&enablejsapi=1&modestbranding=1&rel=0&showinfo=0"
+            src="https://www.youtube.com/embed/agbVL_WqXaY?enablejsapi=1&modestbranding=1&rel=0&showinfo=0"
             frameborder="0"
           />
         </div>
