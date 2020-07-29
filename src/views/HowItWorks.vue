@@ -72,7 +72,7 @@
                 >
                   <img
                     class="w-full"
-                    src="/video-image.jpg"
+                    src="/video-image.png"
                     alt="Welcome to Plexus Market"
                   />
                   <div
