@@ -56,14 +56,14 @@
 <script>
 // Components
 import pHeader from '@/components/pHeader'
-import Playlists from '../components/Playlists.vue'
+import Playlists from '@/components/Playlists'
 import pVideoCard from '@/components/pVideoCard'
 
 // Libraries
 import axios from '@/lib/axios'
 
 export default {
-  name: 'Home',
+  name: 'Templates',
   components: {
     playlists: Playlists,
     pHeader,

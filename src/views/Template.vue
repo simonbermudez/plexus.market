@@ -131,7 +131,7 @@ import pHeader from '@/components/pHeader'
 import axios from '@/lib/axios'
 
 export default {
-  name: 'Product',
+  name: 'Template',
   components: {
     pHeader,
     VueMarkdown,
