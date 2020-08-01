@@ -6,7 +6,7 @@
     }"
     class="overflow-hidden rounded shadow"
   >
-    <div class="w-full container-video">
+    <div class="relative w-full container-video">
       <img
         v-if="selectedVideo !== video.snippet.resourceId.videoId"
         :id="video.snippet.resourceId.videoId"
@@ -33,6 +33,13 @@
         ></iframe>
         <div class="absolute inset-0" @mouseleave="videoHoverLeave()"></div>
       </div>
+
+      <h2
+        v-if="selectedVideo !== video.snippet.resourceId.videoId"
+        class="absolute bottom-0 w-full py-2 font-medium text-center bg-white"
+        @mouseover="videoHover(video.snippet.resourceId.videoId)"
+        v-text="video.snippet.title"
+      ></h2>
     </div>
   </router-link>
 </template>

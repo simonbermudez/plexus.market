@@ -75,11 +75,6 @@ export default {
     videos: [],
     selectedPlaylist: '',
     jotFormUrl: process.env.VUE_APP_JOTFORM,
-    api: {
-      endpoint: process.env.VUE_APP_ENDPOINT,
-      key: process.env.VUE_APP_KEY,
-      channelId: process.env.VUE_APP_CHANNELID,
-    },
   }),
   methods: {
     getPlaylists() {
