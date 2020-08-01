@@ -95,8 +95,6 @@ export default {
     },
     setAllVideos() {
       this.videos = this.playlists.find(x => x.id !== '').videos
-
-      console.log(this.videos)
     },
     selectPlaylist(e) {
       const id = e.target.value
