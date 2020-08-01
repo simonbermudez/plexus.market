@@ -10,7 +10,7 @@
       <img
         v-if="selectedVideo !== video.snippet.resourceId.videoId"
         :id="video.snippet.resourceId.videoId"
-        v-lazy="video.snippet.thumbnails.maxres.url"
+        v-lazy="video.snippet ? video.snippet.thumbnails.maxres.url : ''"
         @mouseover="videoHover(video.snippet.resourceId.videoId)"
         class="w-full"
       />

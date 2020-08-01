@@ -4,17 +4,15 @@
       id="playlists"
       class="grid items-center grid-cols-1 gap-10 my-8 md:grid-cols-2 lg:grid-cols-3"
     >
-      <template v-for="playlist in playlists">
-        <p-video-card
-          v-for="video in playlist.videos"
-          :key="video.id"
-          :video="video"
-          :selectedVideo="selectedVideo"
-          :videoHover="videoHover"
-          :videoHoverLeave="videoHoverLeave"
-          :jotFormUrl="jotFormUrl"
-        />
-      </template>
+      <p-video-card
+        v-for="video in playlistVideos"
+        :key="video.id"
+        :video="video"
+        :selectedVideo="selectedVideo"
+        :videoHover="videoHover"
+        :videoHoverLeave="videoHoverLeave"
+        :jotFormUrl="jotFormUrl"
+      />
     </div>
   </fragment>
 </template>
@@ -29,7 +27,7 @@ export default {
     pVideoCard,
   },
   props: [
-    'playlists',
+    'playlistVideos',
     'selectedVideo',
     'videoHover',
     'videoHoverLeave',
