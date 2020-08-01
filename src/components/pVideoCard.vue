@@ -1,7 +1,7 @@
 <template>
   <router-link
     :to="{
-      name: 'product-detail',
+      name: 'template-detail',
       params: { id: video.snippet.resourceId.videoId },
     }"
     class="overflow-hidden rounded shadow"
