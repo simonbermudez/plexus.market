@@ -10,7 +10,7 @@
   "dependencies": {
     "@saeris/vue-spinners": "^1.0.8",
     "@tailwindcss/ui": "^0.4.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "axios-cache-adapter": "^2.5.0",
     "core-js": "^3.6.5",
     "tailwindcss": "^1.5.2",
