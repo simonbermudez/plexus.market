@@ -569,7 +569,7 @@
     >
       <div
         v-if="isOpenModal"
-        class="absolute overflow-hidden transition-all transform -translate-x-1/2 -translate-y-1/2 rounded-lg shadow-xl left-1/2 sm:max-w-6xl sm:w-full top-1/2"
+        class="absolute overflow-hidden transition-all transform -translate-x-1/2 -translate-y-1/2 rounded-lg shadow-xl left-1/2 sm:max-w-6xl w-full top-1/2"
         role="dialog"
         aria-modal="true"
         aria-labelledby="modal-headline"
